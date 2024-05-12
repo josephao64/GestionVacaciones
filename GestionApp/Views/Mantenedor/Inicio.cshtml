@@ -1,0 +1,45 @@
+﻿@model IEnumerable<GestionApp.Models.Contacto>
+
+@{
+    ViewBag.Title = "Inicio";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h4>listade contactos</h4>
+    </div>
+    <div class="panel-body">
+        <a class="btn btn-success" href="@Url.Action("Crear","Mantenedor")">Crear Nuevo</a>
+        <hr />
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Telefono</th>
+                    <th style="width:150px"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Nombre</td>
+                        <td>@item.Correo</td>
+                        <td>@item.Telefono</td>
+                        <td>
+
+                            <a class="btn btn-primary btn-sm" href="@Url.Action("Editar","Mantenedor",new { idcontacto = item.IdContacto } )">Editar</a>
+                            <a class="btn btn-danger btn-sm" href="@Url.Action("Eliminar","Mantenedor",new { idcontacto = item.IdContacto } )">Elminar</a>
+
+                        </td>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
