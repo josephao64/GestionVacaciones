@@ -1,0 +1,35 @@
+﻿@model GestionApp.Models.Vacacion
+
+@{
+    ViewBag.Title = "Crear Vacación";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h4>Crear Vacación</h4>
+    </div>
+    <div class="panel-body">
+        @using (Html.BeginForm("Crear", "Vacaciones", FormMethod.Post))
+        {
+            <div class="form-group">
+                <label>Empleado</label>
+                @Html.DropDownListFor(m => m.IdEmpleado, (SelectList)ViewBag.Empleados, "Seleccionar Empleado", new { @class = "form-control", required = "required" })
+            </div>
+            <div class="form-group">
+                <label>Fecha de Inicio</label>
+                <input class="form-control" type="date" name="FechaInicio" required />
+            </div>
+            <div class="form-group">
+                <label>Fecha de Fin</label>
+                <input class="form-control" type="date" name="FechaFin" required />
+            </div>
+            <div class="form-group">
+                <label>Motivo</label>
+                <textarea class="form-control" name="Motivo" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+            <a class="btn btn-danger" href="@Url.Action("Index", "Vacaciones")">Volver</a>
+        }
+    </div>
+</div>

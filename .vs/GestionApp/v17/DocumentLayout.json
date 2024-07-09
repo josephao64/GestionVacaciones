@@ -1,34 +1,106 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\",
+  "WorkspaceRootPath": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\gestionapp\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\gestionapp\\views\\mantenedor\\inicio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\views\\mantenedor\\inicio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\gestionapp\\views\\mantenedor\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\views\\mantenedor\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\gestionapp\\views\\mantenedor\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\views\\mantenedor\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|c:\\users\\elizabeth\\source\\repos\\gestionapp\\gestionapp\\controllers\\mantenedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\controllers\\mantenedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|c:\\users\\elizabeth\\source\\repos\\gestionapp\\gestionapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\gestionapp\\models\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\models\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|c:\\users\\elizabeth\\source\\repos\\gestionvacaciones2\\gestionapp\\controllers\\vacacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\controllers\\vacacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\controllers\\mantenedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\controllers\\mantenedorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\models\\vacacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\models\\vacacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\models\\sucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\models\\sucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\models\\empleadosporsucursalviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\models\\empleadosporsucursalviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\models\\empleadocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\models\\empleadocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\views\\mantenedor\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\views\\mantenedor\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\views\\mantenedor\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\views\\mantenedor\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\views\\mantenedor\\inicio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\views\\mantenedor\\inicio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\views\\vacaciones\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\views\\vacaciones\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\views\\home\\clientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\views\\home\\clientes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\views\\vacaciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\views\\vacaciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\views\\vacaciones\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\views\\vacaciones\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\gestionapp\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FCDFEAD4-A90F-4B42-B831-9AD4C1436AC3}|GestionApp\\GestionApp.csproj|solutionrelative:gestionapp\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,102 +110,323 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\GestionApp\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "GestionApp\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\GestionApp\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "GestionApp\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwB0AAAABAAAA",
+              "DocumentIndex": 9,
+              "Title": "Empleadocs.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Models\\Empleadocs.cs",
+              "RelativeDocumentMoniker": "GestionApp\\Models\\Empleadocs.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Models\\Empleadocs.cs",
+              "RelativeToolTip": "GestionApp\\Models\\Empleadocs.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T04:22:07.621Z",
+              "WhenOpened": "2024-05-16T05:50:27.593Z",
+              "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MantenedorController.cs",
-              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\GestionApp\\Controllers\\MantenedorController.cs",
-              "RelativeDocumentMoniker": "GestionApp\\Controllers\\MantenedorController.cs",
-              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\GestionApp\\Controllers\\MantenedorController.cs",
-              "RelativeToolTip": "GestionApp\\Controllers\\MantenedorController.cs",
-              "ViewState": "AQIAAG8AAAAAAAAAAAAowIYAAAABAAAA",
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "GestionApp\\App_Start\\BundleConfig.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "GestionApp\\App_Start\\BundleConfig.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T17:03:05.034Z",
+              "WhenOpened": "2024-05-18T16:05:48.04Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Editar.cshtml",
-              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\GestionApp\\Views\\Mantenedor\\Editar.cshtml",
-              "RelativeDocumentMoniker": "GestionApp\\Views\\Mantenedor\\Editar.cshtml",
-              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\GestionApp\\Views\\Mantenedor\\Editar.cshtml",
-              "RelativeToolTip": "GestionApp\\Views\\Mantenedor\\Editar.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAmwCUAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-12T02:32:20.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Inicio.cshtml",
-              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\GestionApp\\Views\\Mantenedor\\Inicio.cshtml",
-              "RelativeDocumentMoniker": "GestionApp\\Views\\Mantenedor\\Inicio.cshtml",
-              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\GestionApp\\Views\\Mantenedor\\Inicio.cshtml",
-              "RelativeToolTip": "GestionApp\\Views\\Mantenedor\\Inicio.cshtml",
-              "ViewState": "AQIAABMAAAAAAAAAAAAmwCwAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-12T02:13:59.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "RouteConfig.cs",
-              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\GestionApp\\App_Start\\RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "GestionApp\\App_Start\\RouteConfig.cs",
-              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\GestionApp\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\App_Start\\RouteConfig.cs",
               "RelativeToolTip": "GestionApp\\App_Start\\RouteConfig.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAIwBcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-12T01:56:52.224Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Crear.cshtml",
-              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\GestionApp\\Views\\Mantenedor\\Crear.cshtml",
-              "RelativeDocumentMoniker": "GestionApp\\Views\\Mantenedor\\Crear.cshtml",
-              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\GestionApp\\Views\\Mantenedor\\Crear.cshtml",
-              "RelativeToolTip": "GestionApp\\Views\\Mantenedor\\Crear.cshtml",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAmwCAAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-12T01:52:15.39Z",
+              "DocumentIndex": 2,
+              "Title": "MantenedorController.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Controllers\\MantenedorController.cs",
+              "RelativeDocumentMoniker": "GestionApp\\Controllers\\MantenedorController.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Controllers\\MantenedorController.cs",
+              "RelativeToolTip": "GestionApp\\Controllers\\MantenedorController.cs",
+              "ViewState": "AQIAAOAAAAAAAAAAAAAqwGkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T17:03:05.034Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VacacionesController.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Controllers\\VacacionesController.cs",
+              "RelativeDocumentMoniker": "GestionApp\\Controllers\\VacacionesController.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Controllers\\VacacionesController.cs",
+              "RelativeToolTip": "GestionApp\\Controllers\\VacacionesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T22:26:45.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "GestionApp\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "GestionApp\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T04:22:07.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FilterConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\App_Start\\FilterConfig.cs",
+              "RelativeDocumentMoniker": "GestionApp\\App_Start\\FilterConfig.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\App_Start\\FilterConfig.cs",
+              "RelativeToolTip": "GestionApp\\App_Start\\FilterConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T16:26:40.723Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Contacto.cs",
-              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\GestionApp\\Models\\Contacto.cs",
-              "RelativeDocumentMoniker": "GestionApp\\Models\\Contacto.cs",
-              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionApp\\GestionApp\\Models\\Contacto.cs",
-              "RelativeToolTip": "GestionApp\\Models\\Contacto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Title": "Vacacion.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Models\\Vacacion.cs",
+              "RelativeDocumentMoniker": "GestionApp\\Models\\Vacacion.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Models\\Vacacion.cs",
+              "RelativeToolTip": "GestionApp\\Models\\Vacacion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T01:41:20.189Z",
+              "WhenOpened": "2024-05-22T22:28:13.567Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Sucursal.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Models\\Sucursal.cs",
+              "RelativeDocumentMoniker": "GestionApp\\Models\\Sucursal.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Models\\Sucursal.cs",
+              "RelativeToolTip": "GestionApp\\Models\\Sucursal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T05:50:49.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmpleadosPorSucursalViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Models\\EmpleadosPorSucursalViewModel.cs",
+              "RelativeDocumentMoniker": "GestionApp\\Models\\EmpleadosPorSucursalViewModel.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Models\\EmpleadosPorSucursalViewModel.cs",
+              "RelativeToolTip": "GestionApp\\Models\\EmpleadosPorSucursalViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T02:43:54.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Inicio.cshtml",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Mantenedor\\Inicio.cshtml",
+              "RelativeDocumentMoniker": "GestionApp\\Views\\Mantenedor\\Inicio.cshtml",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Mantenedor\\Inicio.cshtml",
+              "RelativeToolTip": "GestionApp\\Views\\Mantenedor\\Inicio.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:13:59.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Vacaciones\\Crear.cshtml",
+              "RelativeDocumentMoniker": "GestionApp\\Views\\Vacaciones\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Vacaciones\\Crear.cshtml",
+              "RelativeToolTip": "GestionApp\\Views\\Vacaciones\\Crear.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T22:31:49.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Clientes.cshtml",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Home\\Clientes.cshtml",
+              "RelativeDocumentMoniker": "GestionApp\\Views\\Home\\Clientes.cshtml",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Home\\Clientes.cshtml",
+              "RelativeToolTip": "GestionApp\\Views\\Home\\Clientes.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T16:13:40.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Mantenedor\\Editar.cshtml",
+              "RelativeDocumentMoniker": "GestionApp\\Views\\Mantenedor\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Mantenedor\\Editar.cshtml",
+              "RelativeToolTip": "GestionApp\\Views\\Mantenedor\\Editar.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAwwDwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T02:32:20.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Mantenedor\\Crear.cshtml",
+              "RelativeDocumentMoniker": "GestionApp\\Views\\Mantenedor\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Mantenedor\\Crear.cshtml",
+              "RelativeToolTip": "GestionApp\\Views\\Mantenedor\\Crear.cshtml",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAwwDsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T01:52:15.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "GestionApp\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "GestionApp\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T15:59:21.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Web.config",
+              "RelativeDocumentMoniker": "GestionApp\\Views\\Web.config",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Web.config",
+              "RelativeToolTip": "GestionApp\\Views\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-22T22:12:43.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Vacaciones\\Index.cshtml",
+              "RelativeDocumentMoniker": "GestionApp\\Views\\Vacaciones\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Vacaciones\\Index.cshtml",
+              "RelativeToolTip": "GestionApp\\Views\\Vacaciones\\Index.cshtml",
+              "ViewState": "AQIAADIAAAAAAAAAAAAwwEAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T22:31:24.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Vacaciones\\Editar.cshtml",
+              "RelativeDocumentMoniker": "GestionApp\\Views\\Vacaciones\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Vacaciones\\Editar.cshtml",
+              "RelativeToolTip": "GestionApp\\Views\\Vacaciones\\Editar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T22:32:11.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "GestionApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "GestionApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T15:59:23.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GestionApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GestionApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAwwCUAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T16:10:47.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "GestionApp\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "GestionApp\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T21:22:13.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "GestionApp\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "GestionApp\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T15:59:18.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Web.config",
+              "RelativeDocumentMoniker": "GestionApp\\Web.config",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\Web.config",
+              "RelativeToolTip": "GestionApp\\Web.config",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-19T16:43:33.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\packages.config",
+              "RelativeDocumentMoniker": "GestionApp\\packages.config",
+              "ToolTip": "C:\\Users\\Elizabeth\\source\\repos\\GestionVacaciones2\\GestionApp\\packages.config",
+              "RelativeToolTip": "GestionApp\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-22T22:12:51.428Z"
             }
           ]
         }

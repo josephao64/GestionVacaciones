@@ -1,33 +1,59 @@
-﻿
+﻿@model GestionApp.Models.Empleado
+
 @{
-    ViewBag.Title = "Crear";
+    ViewBag.Title = "Crear Empleado";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<br />
+
 <div class="panel panel-primary">
     <div class="panel-heading">
-        <h4>Crear contacto</h4>
+        <h4>Crear Empleado</h4>
     </div>
     <div class="panel-body">
-        <form action="@Url.Action("Crear","Mantenedor")" method="post">
+        @using (Html.BeginForm("Crear", "Mantenedor", FormMethod.Post))
+        {
             <div class="form-group">
                 <label>Nombre</label>
-                <input class="form-control" type="text" name="Nombre" />
+                @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control", required = "required" })
             </div>
             <div class="form-group">
-                <label>Correo</label>
-                <input class="form-control" type="text" name="Correo" />
+                <label>Fecha de Inicio</label>
+                @Html.TextBoxFor(m => m.FechaInicio, new { @class = "form-control", type = "date", required = "required" })
             </div>
             <div class="form-group">
-                <label>Telefono</label>
-                <input class="form-control" type="text" name="Telefono" />
+                <label>Fecha de Nacimiento</label>
+                @Html.TextBoxFor(m => m.FechaNacimiento, new { @class = "form-control", type = "date", required = "required" })
             </div>
-
-            <hr />
-            <button type="submit" class="btn btn-primary">Registrar</button>
-            <a class="btn btn-danger" href="@Url.Action("Inicio","Mantenedor")">Volver</a>
-        </form>
-
-
+            <div class="form-group">
+                <label>Dirección</label>
+                @Html.TextBoxFor(m => m.Direccion, new { @class = "form-control", required = "required" })
+            </div>
+            <div class="form-group">
+                <label>Teléfono</label>
+                @Html.TextBoxFor(m => m.Telefono, new { @class = "form-control", required = "required" })
+            </div>
+            <div class="form-group">
+                <label>Teléfono 2</label>
+                @Html.TextBoxFor(m => m.Telefono2, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>Sueldo</label>
+                @Html.TextBoxFor(m => m.Sueldo, new { @class = "form-control", type = "number", required = "required" })
+            </div>
+            <div class="form-group">
+                <label>Puesto</label>
+                @Html.TextBoxFor(m => m.Puesto, new { @class = "form-control", required = "required" })
+            </div>
+            <div class="form-group">
+                <label>Sucursal</label>
+                @Html.DropDownListFor(m => m.SucursalId, (SelectList)ViewBag.Sucursales, "Seleccionar Sucursal", new { @class = "form-control", required = "required" })
+            </div>
+            <div class="form-group">
+                <label>Rol</label>
+                @Html.DropDownListFor(m => m.Rol, (SelectList)ViewBag.Roles, "Seleccionar Rol", new { @class = "form-control", required = "required" })
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+            <a class="btn btn-danger" href="@Url.Action("Inicio", "Mantenedor")">Cancelar</a>
+        }
     </div>
 </div>

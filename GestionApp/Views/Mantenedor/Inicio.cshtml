@@ -1,45 +1,51 @@
-﻿@model IEnumerable<GestionApp.Models.Contacto>
+﻿@model IEnumerable<GestionApp.Models.Empleado>
 
 @{
-    ViewBag.Title = "Inicio";
+    ViewBag.Title = "Lista de Empleados";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<br />
-<div class="panel panel-primary">
-    <div class="panel-heading">
-        <h4>listade contactos</h4>
-    </div>
-    <div class="panel-body">
-        <a class="btn btn-success" href="@Url.Action("Crear","Mantenedor")">Crear Nuevo</a>
-        <hr />
-        <table class="table table-bordered">
-            <thead>
+<h2>Lista de Empleados</h2>
+
+<a href="@Url.Action("Crear", "Mantenedor")" class="btn btn-success">Agregar Nuevo Empleado</a>
+
+@foreach (var sucursalGroup in Model.GroupBy(e => e.SucursalNombre))
+{
+    <h3>@sucursalGroup.Key</h3>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Fecha de Inicio</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Edad</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+                <th>Teléfono 2</th>
+                <th>Sueldo</th>
+                <th>Puesto</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var empleado in sucursalGroup)
+            {
                 <tr>
-                    <th>Nombre</th>
-                    <th>Correo</th>
-                    <th>Telefono</th>
-                    <th style="width:150px"></th>
+                    <td>@Html.DisplayFor(modelItem => empleado.Nombre)</td>
+                    <td>@empleado.FechaInicio.ToString("dd/MM/yyyy")</td>
+                    <td>@empleado.FechaNacimiento.ToString("dd/MM/yyyy")</td>
+                    <td>@empleado.Edad</td>
+                    <td>@Html.DisplayFor(modelItem => empleado.Direccion)</td>
+                    <td>@Html.DisplayFor(modelItem => empleado.Telefono)</td>
+                    <td>@Html.DisplayFor(modelItem => empleado.Telefono2)</td>
+                    <td>@Html.DisplayFor(modelItem => empleado.Sueldo)</td>
+                    <td>@Html.DisplayFor(modelItem => empleado.Puesto)</td>
+                    <td>
+                        @Html.ActionLink("Editar", "Editar", new { idEmpleado = empleado.IdEmpleado }, new { @class = "btn btn-primary" }) |
+                        @Html.ActionLink("Eliminar", "Eliminar", new { idEmpleado = empleado.IdEmpleado }, new { @class = "btn btn-danger", onclick = "return confirm('¿Está seguro de eliminar este empleado?');" })
+                    </td>
                 </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@item.Nombre</td>
-                        <td>@item.Correo</td>
-                        <td>@item.Telefono</td>
-                        <td>
-
-                            <a class="btn btn-primary btn-sm" href="@Url.Action("Editar","Mantenedor",new { idcontacto = item.IdContacto } )">Editar</a>
-                            <a class="btn btn-danger btn-sm" href="@Url.Action("Eliminar","Mantenedor",new { idcontacto = item.IdContacto } )">Elminar</a>
-
-                        </td>
-                    </tr>
-
-                }
-            </tbody>
-        </table>
-
-    </div>
-</div>
+            }
+        </tbody>
+    </table>
+}

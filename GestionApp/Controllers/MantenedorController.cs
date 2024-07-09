@@ -1,135 +1,254 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-
-using FireSharp;
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
-
-
 using Newtonsoft.Json;
-
 using GestionApp.Models;
-using System.Diagnostics.Contracts;
-
-
 
 namespace GestionApp.Controllers
 {
     public class MantenedorController : Controller
     {
-        IFirebaseClient cliente;
-        public MantenedorController() { 
-        
+        private IFirebaseClient cliente;
+        private readonly List<Sucursal> sucursales = new List<Sucursal>
+        {
+            new Sucursal { Id = "1", Nombre = " JALAPA" },
+            new Sucursal { Id = "2", Nombre = " POPTUN" },
+            new Sucursal { Id = "3", Nombre = "ZACAPA" },
+            new Sucursal { Id = "4", Nombre = " Pinula" },
+            new Sucursal { Id = "5", Nombre = " Santa Elena" },
+            new Sucursal { Id = "6", Nombre = " ESKALA" }
+        };
 
-            IFirebaseConfig config = new  FirebaseConfig
+        public MantenedorController()
+        {
+            try
             {
-                AuthSecret = "IiakBzZVLb8CI7nyhHKBV2AogHe2yRyOX1yqZ3BR",
-                BasePath = "https://bdfirebase-88369-default-rtdb.firebaseio.com/"
+                IFirebaseConfig config = new FirebaseConfig
+                {
+                    AuthSecret = "IiakBzZVLb8CI7nyhHKBV2AogHe2yRyOX1yqZ3BR",
+                    BasePath = "https://bdfirebase-88369-default-rtdb.firebaseio.com/"
+                };
 
-            };
+                cliente = new FireSharp.FirebaseClient(config);
 
-
-
-            cliente = new FirebaseClient(config);
+                if (cliente == null)
+                {
+                    throw new Exception("No se pudo inicializar el cliente de Firebase.");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle initialization exception
+                ModelState.AddModelError(string.Empty, $"Error initializing Firebase client: {ex.Message}");
+            }
         }
-
-        // GET: Mantenedort
-
 
         public ActionResult Inicio()
         {
-            Dictionary<string,Contacto> lista = new Dictionary<string,Contacto>();
-            FirebaseResponse response = cliente.Get("contactos");
-
-            if(response.StatusCode == System.Net.HttpStatusCode.OK)
-                lista = JsonConvert.DeserializeObject< Dictionary<string, Contacto> >(response.Body);
-
-
-           List<Contacto> listaContactos = new List<Contacto>();
-            foreach (KeyValuePair<string,Contacto> elemento in lista)
+            try
             {
-                listaContactos.Add(new Contacto()
+                Dictionary<string, Empleado> lista = new Dictionary<string, Empleado>();
+                FirebaseResponse response = cliente.Get("empleados");
+
+                if (response != null && response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    IdContacto = elemento.Key,
-                    Nombre = elemento.Value.Nombre,
-                    Correo = elemento.Value.Correo,
-                    Telefono = elemento.Value.Telefono
-                });
+                    lista = JsonConvert.DeserializeObject<Dictionary<string, Empleado>>(response.Body);
+                    if (lista != null)
+                    {
+                        List<Empleado> listaEmpleados = new List<Empleado>();
 
+                        foreach (KeyValuePair<string, Empleado> elemento in lista)
+                        {
+                            Empleado empleado = elemento.Value;
+                            empleado.IdEmpleado = elemento.Key;
+                            empleado.SucursalNombre = sucursales.FirstOrDefault(s => s.Id == empleado.SucursalId)?.Nombre;
+                            empleado.Edad = CalculateAge(empleado.FechaNacimiento);
 
+                            listaEmpleados.Add(empleado);
+                        }
 
+                        return View(listaEmpleados);
+                    }
+                    else
+                    {
+                        return View(new List<Empleado>());
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Error retrieving data from Firebase.");
+                    return View(new List<Empleado>());
+                }
             }
-            return View(listaContactos);
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, $"Error: {ex.Message}");
+                return View(new List<Empleado>());
+            }
         }
 
         public ActionResult Crear()
         {
+            ViewBag.Sucursales = new SelectList(sucursales, "Id", "Nombre");
+            ViewBag.Roles = new SelectList(new List<string> { "Empleado", "Gerente", "Administrador de RRHH" });
             return View();
         }
 
-        public ActionResult Editar(string idcontacto)
-        {
-            FirebaseResponse response = cliente.Get("contactos/" + idcontacto);
-
-            Contacto ocontacto =response.ResultAs<Contacto>();
-            ocontacto.IdContacto = idcontacto;
- 
-
-
-            return View(ocontacto);
-        }
-
-        public ActionResult Eliminar(string idcontacto)
-        {
-            FirebaseResponse response = cliente.Delete("contactos/" + idcontacto);
-
-            return RedirectToAction("Inicio", "Mantenedor");
-        }
-
-
-       [HttpPost]
-        public ActionResult Crear(Contacto oContacto)
-        {
-            String IdGenerado = Guid.NewGuid().ToString("N");
-
-            SetResponse response = cliente.Set("contactos/" + IdGenerado, oContacto);
-            if (response.StatusCode == System.Net.HttpStatusCode.OK) {
-                return RedirectToAction("Inicio", "Mantenedor");
-            }
-            else
-            {
-                return View();
-            }
-
-
-            
-        }
         [HttpPost]
-        public ActionResult Editar(Contacto oContacto)
+        public ActionResult Crear(Empleado oEmpleado)
         {
-
-            string idcontacto = oContacto.IdContacto;
-            oContacto.IdContacto = null;
-
-            FirebaseResponse response = cliente.Update("contactos/" + idcontacto,oContacto);
-
-            if (response.StatusCode == System.Net.HttpStatusCode.OK)
+            try
             {
-                return RedirectToAction("Inicio", "Mantenedor");
+                if (ModelState.IsValid)
+                {
+                    string IdGenerado = Guid.NewGuid().ToString("N");
+                    oEmpleado.Edad = CalculateAge(oEmpleado.FechaNacimiento);
+                    SetResponse response = cliente.Set("empleados/" + IdGenerado, oEmpleado);
+
+                    if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        return RedirectToAction("Inicio");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, "Error saving data to Firebase.");
+                        ViewBag.Sucursales = new SelectList(sucursales, "Id", "Nombre");
+                        ViewBag.Roles = new SelectList(new List<string> { "Empleado", "Gerente", "Administrador de RRHH" });
+                        return View(oEmpleado);
+                    }
+                }
+                else
+                {
+                    ViewBag.Sucursales = new SelectList(sucursales, "Id", "Nombre");
+                    ViewBag.Roles = new SelectList(new List<string> { "Empleado", "Gerente", "Administrador de RRHH" });
+                    return View(oEmpleado);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return View();
+                ModelState.AddModelError(string.Empty, $"Error: {ex.Message}");
+                ViewBag.Sucursales = new SelectList(sucursales, "Id", "Nombre");
+                ViewBag.Roles = new SelectList(new List<string> { "Empleado", "Gerente", "Administrador de RRHH" });
+                return View(oEmpleado);
             }
         }
 
+        public ActionResult Editar(string idEmpleado)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(idEmpleado))
+                {
+                    ModelState.AddModelError(string.Empty, "ID del empleado no puede estar vacío.");
+                    return RedirectToAction("Inicio");
+                }
 
+                FirebaseResponse response = cliente.Get("empleados/" + idEmpleado);
 
+                if (response == null || response.StatusCode != System.Net.HttpStatusCode.OK)
+                {
+                    ModelState.AddModelError(string.Empty, "Error retrieving data from Firebase.");
+                    return RedirectToAction("Inicio");
+                }
 
+                Empleado oEmpleado = response.ResultAs<Empleado>();
+                if (oEmpleado == null)
+                {
+                    ModelState.AddModelError(string.Empty, "Empleado no encontrado.");
+                    return RedirectToAction("Inicio");
+                }
 
+                oEmpleado.IdEmpleado = idEmpleado;
+                oEmpleado.Edad = CalculateAge(oEmpleado.FechaNacimiento);
+
+                ViewBag.Sucursales = new SelectList(sucursales, "Id", "Nombre", oEmpleado.SucursalId);
+                ViewBag.Roles = new SelectList(new List<string> { "Empleado", "Gerente", "Administrador de RRHH" }, oEmpleado.Rol);
+                return View(oEmpleado);
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, $"Error: {ex.Message}");
+                return RedirectToAction("Inicio");
+            }
+        }
+
+        [HttpPost]
+        public ActionResult Editar(Empleado oEmpleado)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    string idEmpleado = oEmpleado.IdEmpleado;
+                    oEmpleado.IdEmpleado = null;
+                    oEmpleado.Edad = CalculateAge(oEmpleado.FechaNacimiento);
+
+                    FirebaseResponse response = cliente.Update("empleados/" + idEmpleado, oEmpleado);
+
+                    if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        return RedirectToAction("Inicio");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, "Error updating data in Firebase.");
+                        ViewBag.Sucursales = new SelectList(sucursales, "Id", "Nombre", oEmpleado.SucursalId);
+                        ViewBag.Roles = new SelectList(new List<string> { "Empleado", "Gerente", "Administrador de RRHH" }, oEmpleado.Rol);
+                        return View(oEmpleado);
+                    }
+                }
+                else
+                {
+                    ViewBag.Sucursales = new SelectList(sucursales, "Id", "Nombre", oEmpleado.SucursalId);
+                    ViewBag.Roles = new SelectList(new List<string> { "Empleado", "Gerente", "Administrador de RRHH" }, oEmpleado.Rol);
+                    return View(oEmpleado);
+                }
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, $"Error: {ex.Message}");
+                ViewBag.Sucursales = new SelectList(sucursales, "Id", "Nombre", oEmpleado.SucursalId);
+                ViewBag.Roles = new SelectList(new List<string> { "Empleado", "Gerente", "Administrador de RRHH" }, oEmpleado.Rol);
+                return View(oEmpleado);
+            }
+        }
+
+        public ActionResult Eliminar(string idEmpleado)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(idEmpleado))
+                {
+                    ModelState.AddModelError(string.Empty, "ID del empleado no puede estar vacío.");
+                    return RedirectToAction("Inicio");
+                }
+
+                FirebaseResponse response = cliente.Delete("empleados/" + idEmpleado);
+
+                if (response == null || response.StatusCode != System.Net.HttpStatusCode.OK)
+                {
+                    ModelState.AddModelError(string.Empty, "Error deleting data from Firebase.");
+                    return RedirectToAction("Inicio");
+                }
+
+                return RedirectToAction("Inicio");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, $"Error: {ex.Message}");
+                return RedirectToAction("Inicio");
+            }
+        }
+
+        private int CalculateAge(DateTime birthDate)
+        {
+            int age = DateTime.Today.Year - birthDate.Year;
+            if (birthDate.Date > DateTime.Today.AddYears(-age)) age--;
+            return age;
+        }
     }
 }

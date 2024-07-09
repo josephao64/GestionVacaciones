@@ -26,5 +26,13 @@ namespace GestionApp.Controllers
 
             return View();
         }
+
+        public ActionResult Clientes()
+        {
+            return RedirectToAction("Inicio" , "Mantenedor");
+
+
+
+        }
     }
 }

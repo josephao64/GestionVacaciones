@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Clientes";
+}
+
+<h2>Clientes</h2>
+
+<div>
+    <h3>Lista de Empleados por Sucursal</h3>
+    @Html.Action("Inicio", "Mantenedor")
+</div>
+
+<div>
+    <a href="@Url.Action("Crear", "Mantenedor")" class="btn btn-success">Agregar Nuevo Empleado</a>
+</div>

@@ -1,0 +1,48 @@
+﻿@model GestionApp.Models.Vacacion
+
+@{
+    ViewBag.Title = "Editar Vacación";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h4>Editar Vacación</h4>
+    </div>
+    <div class="panel-body">
+        @using (Html.BeginForm("Editar", "Vacaciones", FormMethod.Post))
+        {
+            @Html.HiddenFor(model => model.IdVacacion)
+            <div class="form-group">
+                <label>Empleado</label>
+                @Html.DropDownListFor(m => m.IdEmpleado, (SelectList)ViewBag.Empleados, "Seleccionar Empleado", new { @class = "form-control", required = "required" })
+            </div>
+            <div class="form-group">
+                <label>Fecha de Inicio</label>
+                @Html.TextBoxFor(model => model.FechaInicio, new { @class = "form-control", type = "date", required = "required" })
+            </div>
+            <div class="form-group">
+                <label>Fecha de Fin</label>
+                @Html.TextBoxFor(model => model.FechaFin, new { @class = "form-control", type = "date", required = "required" })
+            </div>
+            <div class="form-group">
+                <label>Motivo</label>
+                @Html.TextAreaFor(model => model.Motivo, new { @class = "form-control", required = "required" })
+            </div>
+            <div class="form-group">
+                <label>Pagada</label>
+                @Html.CheckBoxFor(model => model.EsPagada)
+            </div>
+            <div class="form-group">
+                <label>Completada</label>
+                @Html.CheckBoxFor(model => model.EsCompletada)
+            </div>
+            <div class="form-group">
+                <label>Aprobada</label>
+                @Html.CheckBoxFor(model => model.Aprobada)
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+            <a class="btn btn-danger" href="@Url.Action("Index", "Vacaciones")">Volver</a>
+        }
+    </div>
+</div>

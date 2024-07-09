@@ -1,0 +1,71 @@
+﻿@model IEnumerable<GestionApp.Models.Vacacion>
+
+@{
+    ViewBag.Title = "Vacaciones";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Vacaciones</h2>
+
+<a href="@Url.Action("Crear", "Vacaciones")" class="btn btn-success">Agregar Nueva Vacación</a>
+
+@foreach (var sucursalGroup in Model.GroupBy(v => v.SucursalNombre))
+{
+    <h3>@sucursalGroup.Key</h3>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Empleado</th>
+                <th>Fecha de Inicio</th>
+                <th>Fecha de Fin</th>
+                <th>Motivo</th>
+                <th>Pagada</th>
+                <th>Completada</th>
+                <th>Aprobada</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var vacacion in sucursalGroup)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => vacacion.NombreEmpleado)</td>
+                    <td>@vacacion.FechaInicio.ToString("dd/MM/yyyy")</td>
+                    <td>@vacacion.FechaFin.ToString("dd/MM/yyyy")</td>
+                    <td>@Html.DisplayFor(modelItem => vacacion.Motivo)</td>
+                    <td>@Html.DisplayFor(modelItem => vacacion.EsPagada)</td>
+                    <td>@Html.DisplayFor(modelItem => vacacion.EsCompletada)</td>
+                    <td>@Html.DisplayFor(modelItem => vacacion.Aprobada)</td>
+                    <td>
+                        @Html.ActionLink("Editar", "Editar", new { idVacacion = vacacion.IdVacacion }, new { @class = "btn btn-primary" }) |
+                        @Html.ActionLink("Eliminar", "Eliminar", new { idVacacion = vacacion.IdVacacion }, new { @class = "btn btn-danger", onclick = "return confirm('¿Está seguro de eliminar esta vacación?');" })<br />
+                        @if (!vacacion.EsPagada)
+                        {
+                            using (Html.BeginForm("MarcarComoPagada", "Vacaciones", FormMethod.Post))
+                            {
+                                @Html.Hidden("idVacacion", vacacion.IdVacacion)
+                                <button type="submit" class="btn btn-warning">Marcar como Pagada</button>
+                            }
+                        }<br />
+                        @if (!vacacion.EsCompletada)
+                        {
+                            using (Html.BeginForm("MarcarComoCompletada", "Vacaciones", FormMethod.Post))
+                            {
+                                @Html.Hidden("idVacacion", vacacion.IdVacacion)
+                                <button type="submit" class="btn btn-success">Marcar como Completada</button>
+                            }
+                        }<br />
+                        @if (!vacacion.Aprobada)
+                        {
+                            using (Html.BeginForm("Aprobar", "Vacaciones", FormMethod.Post))
+                            {
+                                @Html.Hidden("idVacacion", vacacion.IdVacacion)
+                                <button type="submit" class="btn btn-info">Aprobar</button>
+                            }
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
